@@ -1,0 +1,15 @@
+<div class="ca-c-card">
+  <app-title-card [content]="{
+      title: 'Cartão de credito',
+      icon: 'icon-credit-card.png',
+      bg: true,
+    }"></app-title-card>
+  <app-item-card [items]="[
+      { title: '1234567891011', subTitle: 'FELIPE DA SILVA FREITAS' ,value: 'MASTER CARD' },
+      { title: 'Limite de Compra', value: 'R$ 1000,00', showLine: true },
+      { title: 'Disponível', value: 'R$ 1200,00' },
+      { title: 'Limite de Saque', value: 'R$ 2000,00', showLine: true },
+      { title: 'Disponível', value: 'R$ 1300,00'},
+      { title: 'Limite total Utilizado', value: 'R$ 3000,00'},
+    ]"></app-item-card>
+</div>

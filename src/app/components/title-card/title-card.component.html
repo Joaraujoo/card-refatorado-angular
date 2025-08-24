@@ -1,0 +1,9 @@
+<div class="header" [ngStyle]="content.bg ? bgOrange : bgBlue" >
+  <div class="header__title">
+    <img class="header__icon" [src]="'assets/icons/' + content.icon" [alt]="content.title" />
+    <h1>{{ content.title}}</h1>
+  </div>
+  <p>
+    {{ content.value }}
+  </p>
+</div>

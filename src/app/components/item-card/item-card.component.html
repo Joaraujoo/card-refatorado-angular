@@ -1,0 +1,23 @@
+<div class="ca-c-card content">
+  @for (item of items; track $index) {
+  <div [class]="!item.subTitle ? 'content__item' : 'content__item-display' ">
+    <p>{{ item.title}}</p>
+    <p>{{ item?.subTitle }}</p>
+    <p>{{ item.value}}</p>
+  </div>
+  @if (item.showLine){
+  <div class="content__line"></div>
+  }
+  }
+
+  @if (sumary?.length) {
+  <div class="content__summary">
+    @for (sum of sumary; track $index) {
+    <div class="content__item">
+      <p>{{ sum.title }}</p>
+      <p>{{sum.value}}</p>
+    </div>
+    }
+  </div>
+  }
+</div>

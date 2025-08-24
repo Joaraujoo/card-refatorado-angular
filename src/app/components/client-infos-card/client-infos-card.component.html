@@ -1,0 +1,14 @@
+<div class="ca-c-card">
+  <app-title-card [content]="{
+        title: 'Informações do cliente',
+        icon: 'icon-client.png',
+        bg: false,
+      }">
+  </app-title-card>
+  <app-item-card [items]="[
+      { title: 'Nome', value: 'Felipe da Silva Freitas', showLine: true},
+      { title: 'Idade', value: '26 anos', showLine: true},
+      { title: 'Renda Mensal', value: 'R$ -1000,00', showLine: true},
+      { title: 'Nacionalidade', value: 'Brasileiro'},
+    ]"></app-item-card>
+</div>

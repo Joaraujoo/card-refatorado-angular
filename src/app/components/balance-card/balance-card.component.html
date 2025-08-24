@@ -1,0 +1,19 @@
+<div class="ca-c-card">
+  <app-title-card [content]="{
+      title: 'Saldos Disponiveis',
+      icon: 'icon-hand.png',
+      value: 'R$ 100,00',
+      bg: true,
+    }">
+  </app-title-card>
+  <app-item-card [items]="[
+    { title: 'Conta Corrente', value: 'R$ 200,00', showLine: true },
+    { title: 'Conta Corrente Saldo Vinculados', value: 'R$ 300,00', showLine: true },
+    { title: 'Conta Poupança Saldo Vinculados', value: 'R$ 400,00', showLine: true },
+    { title: 'Investimentos com Baixa Automática', value: 'R$ 500,00', showLine: true },
+    { title: 'Investimentos sem Baixa Automática', value: 'R$ 500,00', showLine: true }
+  ]" [sumary]="[
+    { title: 'SALDO TOTAL', value: 'R$ 1000,00' },
+    { title: 'LIVRE PARA MOVIMENTAÇÃO', value: 'R$ 1000,00' }
+  ]"></app-item-card>
+</div>
